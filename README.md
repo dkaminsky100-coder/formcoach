@@ -14,7 +14,7 @@ Get **`FormCoach-Setup-x.y.z.exe`** under *Assets* on the Releases page and run 
 
 ## Install the desktop app (Windows)
 
-1. Run **`FormCoach-Setup-1.0.0.exe`**.
+1. Run the installer, **`FormCoach-Setup-<version>.exe`** (from the [Releases page](https://github.com/dkaminsky100-coder/formcoach/releases/latest)).
 2. Windows may show **"Windows protected your PC"** because the app isn't code-signed. Click **More info → Run anyway**.
 3. Choose where to install and click **Install**. You'll get a **FormCoach** shortcut on the desktop and in the Start menu.
 4. Open FormCoach. It runs in its own window and needs no internet. Camera access is granted to the app automatically; it never uses the microphone.

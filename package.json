@@ -1,10 +1,10 @@
 {
   "name": "formcoach",
   "productName": "FormCoach",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Real-time workout form feedback that runs entirely on your computer",
-  "author": "FormCoach",
+  "author": "David Kaminsky",
   "license": "MIT",
   "type": "module",
   "main": "electron/main.cjs",
@@ -31,7 +31,7 @@
   "build": {
     "appId": "app.formcoach.desktop",
     "productName": "FormCoach",
-    "copyright": "FormCoach",
+    "copyright": "Copyright (c) 2026 David Kaminsky",
     "directories": {
       "output": "installer",
       "buildResources": "build"

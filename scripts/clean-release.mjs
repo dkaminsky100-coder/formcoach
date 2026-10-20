@@ -1,12 +1,15 @@
 // After `electron-builder`, keep only the installer in installer/.
 // The unpacked app (installer/win-unpacked/FormCoach.exe) and build metadata are removed:
 // people get the app by running the installer.
-import { readdirSync, rmSync } from 'node:fs';
+// Older versions' installers are removed too: they stay available on the GitHub Releases page.
+import { readFileSync, readdirSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-const dir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'installer');
-const isInstaller = (name) => /^FormCoach-Setup-.*\.exe$/.test(name);
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+const dir = path.join(root, 'installer');
+const { version } = JSON.parse(readFileSync(path.join(root, 'package.json'), 'utf8'));
+const isInstaller = (name) => name === `FormCoach-Setup-${version}.exe`;
 
 const kept = [];
 for (const name of readdirSync(dir)) {
