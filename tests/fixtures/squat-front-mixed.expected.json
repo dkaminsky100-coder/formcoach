@@ -1,0 +1,6 @@
+{
+  "description": "Synthetic, front view: clean, knees caving, too shallow, clean",
+  "reps": 3,
+  "partials": 1,
+  "repFaults": [[], ["knee_valgus"], [], []]
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+# The installer stays in this folder but not in git (GitHub blocks files over 100 MB);
+# it's published as a GitHub Release asset instead.
+installer/
+# Downloaded / copied by `npm run setup`
+public/models/
+public/wasm/
