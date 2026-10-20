@@ -187,3 +187,11 @@ tests/             Vitest - synthetic bodies with exact known angles, plus recor
 - One person at a time. If someone else walks in, the rep in progress is dropped rather than miscounted.
 - Pose landmarks have no points along the spine, so "Chest up" measures trunk lean, not lower-back rounding.
 - Thresholds were tuned on simulated bodies and are adjustable via Strictness. Real recordings (above) are the way to fine-tune them.
+
+---
+
+## License
+
+[MIT](LICENSE): free to use, modify and share, as long as the copyright notice is kept.
+
+Pose tracking uses Google's [MediaPipe](https://github.com/google-ai-edge/mediapipe) (Apache 2.0) and its Pose Landmarker models. The desktop app is built with [Electron](https://www.electronjs.org/) (MIT).

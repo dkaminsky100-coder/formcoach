@@ -5,6 +5,7 @@
   "private": true,
   "description": "Real-time workout form feedback that runs entirely on your computer",
   "author": "FormCoach",
+  "license": "MIT",
   "type": "module",
   "main": "electron/main.cjs",
   "scripts": {
